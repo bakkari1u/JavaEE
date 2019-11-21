@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.io.Writer;
 
 
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
@@ -13,13 +14,14 @@ import javax.servlet.http.*;
 @WebServlet("/bag")
 public class BagServlet extends HttpServlet {
 
-	//Bag myBag = new Bag();
+	Bag myBag = new Bag();
 	protected void doGet(HttpServletRequest req, HttpServletResponse res)
 	throws ServletException, IOException {
 
 		res.setContentType("text/html");
 
 		PrintWriter out = res.getWriter();
+		myBag.print(out);
 
 		out.append("<!DOCTYPE html>")
 	      .append("<html>")
@@ -50,24 +52,26 @@ public class BagServlet extends HttpServlet {
 
 		PrintWriter out = res.getWriter();
 
-		out.append("<!DOCTYPE html>\r\n")
+		/*out.append("<!DOCTYPE html>\r\n")
 				.append("<html>\r\n")
 				.append("		<head>\r\n")
 				.append("			<title>Welcome message</title>\r\n")
 				.append("		</head>\r\n")
-				.append("		<body>\r\n");
+				.append("		<body>\r\n");*/
 
 	  if (ref != null && !ref.trim().isEmpty() && qty != null && !qty.trim().isEmpty()) {
-			out.append("	your ref is " + ref + ".\r\n");
-			out.append("	your qty is " + qty + ".\r\n");
+			//out.append("	your ref is " + ref + ".\r\n");
+			//out.append("	your qty is " + qty + ".\r\n");
+			Integer qt=Integer.parseInt(qty);
+      myBag.setItem(ref,qt);
+      res.sendRedirect("/exo103/bag");
 	}
 
 	  else{
-			//out.append("ERREUR" + ".\r\n");
 			res.setStatus(400);
 		}
-		out.append("		</body>\r\n")
-				.append("</html>\r\n");
+		/*out.append("		</body>\r\n")
+				.append("</html>\r\n");*/
 
 
 }
