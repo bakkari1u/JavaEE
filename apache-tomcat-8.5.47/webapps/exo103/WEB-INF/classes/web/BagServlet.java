@@ -1,6 +1,3 @@
-
-
-
 package web;
 
 import java.io.IOException;
@@ -50,7 +47,7 @@ public class BagServlet extends HttpServlet {
 
 			myBag.setItem(ref, qt);
 			session.setAttribute("bag", myBag);
-			res.sendRedirect("/exo103/bag");
+			res.sendRedirect("bag.jsp");
 		}
 
 		else {
