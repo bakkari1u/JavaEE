@@ -1,0 +1,45 @@
+17-Nov-2019 17:59:28.037 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/8.5.47
+17-Nov-2019 17:59:28.044 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:       Oct 7 2019 13:30:46 UTC
+17-Nov-2019 17:59:28.045 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      8.5.47.0
+17-Nov-2019 17:59:28.045 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 10
+17-Nov-2019 17:59:28.045 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version de l'OS:        10.0
+17-Nov-2019 17:59:28.046 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Nov-2019 17:59:28.046 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk1.8.0_191\jre
+17-Nov-2019 17:59:28.046 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           1.8.0_191-b12
+17-Nov-2019 17:59:28.047 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+17-Nov-2019 17:59:28.047 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47
+17-Nov-2019 17:59:28.047 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47
+17-Nov-2019 17:59:28.048 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\conf\logging.properties
+17-Nov-2019 17:59:28.048 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Nov-2019 17:59:28.050 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djdk.tls.ephemeralDHKeySize=2048
+17-Nov-2019 17:59:28.052 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Nov-2019 17:59:28.054 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dignore.endorsed.dirs=
+17-Nov-2019 17:59:28.062 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47
+17-Nov-2019 17:59:28.063 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47
+17-Nov-2019 17:59:28.064 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\temp
+17-Nov-2019 17:59:28.065 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+17-Nov-2019 17:59:28.065 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+17-Nov-2019 17:59:28.066 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL: useAprConnector [false], useOpenSSL [true]
+17-Nov-2019 17:59:28.075 INFOS [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+17-Nov-2019 17:59:28.351 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+17-Nov-2019 17:59:29.043 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Nov-2019 17:59:29.068 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["ajp-nio-8009"]
+17-Nov-2019 17:59:29.073 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Nov-2019 17:59:29.075 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1748 ms
+17-Nov-2019 17:59:29.129 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+17-Nov-2019 17:59:29.130 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.47
+17-Nov-2019 17:59:29.147 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\docs]
+17-Nov-2019 17:59:29.548 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\docs] de l'application web s'est terminé en [399] ms
+17-Nov-2019 17:59:29.549 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\examples]
+17-Nov-2019 17:59:30.186 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\examples] de l'application web s'est terminé en [637] ms
+17-Nov-2019 17:59:30.187 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\host-manager]
+17-Nov-2019 17:59:30.348 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\host-manager] de l'application web s'est terminé en [160] ms
+17-Nov-2019 17:59:30.353 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\manager]
+17-Nov-2019 17:59:30.426 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\manager] de l'application web s'est terminé en [73] ms
+17-Nov-2019 17:59:30.426 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\ROOT]
+17-Nov-2019 17:59:30.467 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\ROOT] de l'application web s'est terminé en [41] ms
+17-Nov-2019 17:59:30.468 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\tp1]
+17-Nov-2019 17:59:30.537 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\mohamed bakkari\Desktop\apache-tomcat-8.5.47\webapps\tp1] de l'application web s'est terminé en [70] ms
+17-Nov-2019 17:59:30.544 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+17-Nov-2019 17:59:30.562 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["ajp-nio-8009"]
+17-Nov-2019 17:59:30.569 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 1494 ms
