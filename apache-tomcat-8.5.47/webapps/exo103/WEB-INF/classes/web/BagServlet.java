@@ -14,22 +14,28 @@ import javax.servlet.http.*;
 @WebServlet("/bag")
 public class BagServlet extends HttpServlet {
 
-//	Bag myBag = new Bag();
 
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse res)
 	throws ServletException, IOException {
 
-		Bag myBag = new Bag();
+
+				res.setContentType("text/html");
+
+				PrintWriter out = res.getWriter();
 		HttpSession session = req.getSession(true);
+		Bag myBag = new Bag();
+		if (session.isNew())
+				session.setAttribute("myBag", myBag);
+			 else {
+				myBag = (Bag)session.getAttribute("myBag");
+				myBag.print(out);
+			}
 
-		res.setContentType("text/html");
-
-		PrintWriter out = res.getWriter();
 		//session.setAttribute("bag",myBag);
 		//session.setAttribute("bag",myBag);
-	  myBag =(session.getAttribute("bag")!=null) ? (Bag)session.getAttribute("bag") : myBag;
-		myBag.print(out);
+	  //myBag =(session.getAttribute("bag")!=null) ? (Bag)session.getAttribute("bag") : myBag;
+	//	myBag.print(out);
 		out.append("<!DOCTYPE html>")
 	      .append("<html>")
 	      .append("<head>")
@@ -54,10 +60,10 @@ public class BagServlet extends HttpServlet {
 
 		String ref = req.getParameter("ref");
 		String qty = req.getParameter("qty");
-
-		res.setContentType("text/html");
 Bag myBag = new Bag();
-  HttpSession session = req.getSession();
+		res.setContentType("text/html");
+   //Bag myBag = new Bag();
+   HttpSession session = req.getSession();
 
 		PrintWriter out = res.getWriter();
 
@@ -74,8 +80,8 @@ Bag myBag = new Bag();
 			Integer qt=Integer.parseInt(qty);
 			//Bag bag = (Bag) session.getAttribute("bag");
       myBag.setItem(ref,qt);
-			session.setAttribute("bag", myBag);
-      res.sendRedirect("/exo103/bag");
+			session.setAttribute("myBag", myBag);
+      res.sendRedirect("bag.jsp");
 	}
 
 	  else{
