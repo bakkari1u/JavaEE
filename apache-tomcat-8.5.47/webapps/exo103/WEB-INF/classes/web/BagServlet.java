@@ -14,15 +14,22 @@ import javax.servlet.http.*;
 @WebServlet("/bag")
 public class BagServlet extends HttpServlet {
 
-	Bag myBag = new Bag();
+//	Bag myBag = new Bag();
+
+
 	protected void doGet(HttpServletRequest req, HttpServletResponse res)
 	throws ServletException, IOException {
+
+		Bag myBag = new Bag();
+		HttpSession session = req.getSession(true);
 
 		res.setContentType("text/html");
 
 		PrintWriter out = res.getWriter();
+		//session.setAttribute("bag",myBag);
+		//session.setAttribute("bag",myBag);
+	  myBag =(session.getAttribute("bag")!=null) ? (Bag)session.getAttribute("bag") : myBag;
 		myBag.print(out);
-
 		out.append("<!DOCTYPE html>")
 	      .append("<html>")
 	      .append("<head>")
@@ -49,6 +56,8 @@ public class BagServlet extends HttpServlet {
 		String qty = req.getParameter("qty");
 
 		res.setContentType("text/html");
+Bag myBag = new Bag();
+  HttpSession session = req.getSession();
 
 		PrintWriter out = res.getWriter();
 
@@ -63,7 +72,9 @@ public class BagServlet extends HttpServlet {
 			//out.append("	your ref is " + ref + ".\r\n");
 			//out.append("	your qty is " + qty + ".\r\n");
 			Integer qt=Integer.parseInt(qty);
+			//Bag bag = (Bag) session.getAttribute("bag");
       myBag.setItem(ref,qt);
+			session.setAttribute("bag", myBag);
       res.sendRedirect("/exo103/bag");
 	}
 
